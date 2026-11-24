@@ -1,0 +1,7 @@
+name: product-confirm
+description: Ask for explicit permission to create the product
+type: HUMANLOOP
+active: false
+data:
+  question: Create this product with the details provided?
+  options: [Create product, Cancel]

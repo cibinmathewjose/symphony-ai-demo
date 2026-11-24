@@ -1,0 +1,9 @@
+name: review-decision
+description: Ask the reviewer to approve or request changes
+type: HUMANLOOP
+active: false
+data:
+  question: 'Review the sample stock: {{$stock}}. What should happen next?'
+  options:
+    - Approve review
+    - Request changes

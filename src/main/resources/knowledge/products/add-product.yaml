@@ -1,0 +1,15 @@
+name: add-product
+description: Collect missing inventory product details and confirm creation
+type: SYMPHONY
+active: false
+data:
+  Flow:
+    - {Name: product-field-check, Key: needsku, Payload: input, Order: 1, JsonPath: '$[0].sku'}
+    - {Name: product-field-check, Key: needname, Payload: input, Order: 1, JsonPath: '$[0].name'}
+    - {Name: product-field-check, Key: needquantity, Payload: input, Order: 1, JsonPath: '$[0].quantity'}
+    - {Name: product-ask-sku, Key: sku, Condition: needsku, Order: 2}
+    - {Name: product-ask-name, Key: name, Condition: needname, Order: 3}
+    - {Name: product-ask-quantity, Key: quantity, Condition: needquantity, Order: 4}
+    - {Name: product-confirm, Key: confirmation, Order: 5}
+    - {Name: product-create, Key: result, Payload: 'input,sku,name,quantity,confirmation', Order: 6}
+  Result: result

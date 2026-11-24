@@ -1,0 +1,5 @@
+name: product-create
+description: Save a validated and confirmed inventory product
+type: PLUGIN
+active: false
+data: {Tool: productCreate}

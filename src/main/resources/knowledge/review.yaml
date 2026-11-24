@@ -1,0 +1,16 @@
+name: review
+description: Start a stock review workflow
+type: SYMPHONY
+aliases: [start a stock review, stock review]
+data:
+  Flow:
+    - Name: inventory
+      Key: stock
+      Payload: input
+      Order: 1
+      Required: true
+    - Name: review-decision
+      Key: decision
+      Order: 2
+  SystemPrompt: 'Confirm that the stock review is complete and state the reviewer decision: {{$decision}}.'
+  UserPrompt: Summarize the review

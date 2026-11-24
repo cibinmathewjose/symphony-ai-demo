@@ -1,0 +1,6 @@
+name: product-ask-quantity
+description: Collect the starting quantity
+type: HUMANLOOP
+active: false
+data:
+  question: What is the starting quantity? Enter a whole number of zero or more.

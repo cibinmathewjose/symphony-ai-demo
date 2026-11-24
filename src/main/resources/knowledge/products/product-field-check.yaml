@@ -1,0 +1,5 @@
+name: product-field-check
+description: Check which product details are missing
+type: PLUGIN
+active: false
+data: {Tool: productFieldCheck}

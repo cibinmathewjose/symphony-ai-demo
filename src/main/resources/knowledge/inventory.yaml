@@ -1,0 +1,8 @@
+name: inventory
+description: Show the full sample inventory without filters or calculations, e.g. "Show inventory".
+type: SQL
+aliases: [show inventory, list all inventory]
+data: >-
+  SELECT SKU, PRODUCT, QUANTITY
+  FROM INVENTORY
+  ORDER BY SKU

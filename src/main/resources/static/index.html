@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symphony AI Demo</title>
+<link rel="stylesheet" href="chat.css">
+<script defer src="chat.js"></script>
+<main>
+  <header><span class="badge">LOCAL DEMO</span><button id="reset" type="button">New chat</button></header>
+  <h1>Symphony AI <em>Demo</em></h1>
+  <p>Ask an inventory question in plain language or run a workflow that pauses for your decision.</p>
+  <p>Live chat uses Server-Sent Events: <code>POST /directchat/stream</code>.</p>
+  <section id="chat" aria-label="Conversation">
+    <div id="messages" role="log" aria-label="Messages"></div>
+    <div id="examples" aria-label="Example prompts">
+      <button type="button">Show inventory</button>
+      <button type="button" id="add-product">Add product</button>
+      <button type="button">Which products have fewer than 15 units in stock?</button>
+      <button type="button">Start a stock review</button>
+      <button type="button">What is the return policy?</button>
+      <button type="button">What can this demo do?</button>
+    </div>
+    <div id="status" role="status"></div>
+    <form id="composer"><label for="message">Your message</label><div class="input-row">
+      <input id="message" autocomplete="off" maxlength="2000" placeholder="Ask about inventory…" required>
+      <button id="send">Send</button>
+    </div></form>
+  </section>
+</main>
+</html>

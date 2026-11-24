@@ -1,0 +1,29 @@
+name: H2_DB
+description: Answer inventory data questions using H2, including filters, comparisons, counts, totals, and product or SKU lookups. Use this instead of the fixed inventory listing for questions about specific data.
+type: DATABASE
+aliases:
+  - inventory database
+  - units in stock
+  - in stock
+  - how many products
+  - number of products
+  - count products
+  - total inventory
+  - total stock
+  - stock for sku
+  - sku
+  - units
+  - quantity
+data:
+  dbname: demo-h2
+  schemas:
+    - PUBLIC
+  tables:
+    - INVENTORY
+  maxRows: 25
+systemPrompt: |-
+  Use H2 SQL to query only PUBLIC.INVENTORY. Return a single read-only SELECT.
+  SKU is the product identifier, PRODUCT is the display name, and QUANTITY is the number of units on hand.
+  Count products with COUNT(*) and total units with SUM(QUANTITY).
+  Use a numeric quantity comparison for requests such as "fewer than 15 units".
+  Use SKU for item lookup. Sort multi-row inventory results by SKU.

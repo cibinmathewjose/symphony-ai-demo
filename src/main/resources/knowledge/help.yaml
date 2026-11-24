@@ -1,0 +1,7 @@
+name: help
+description: Explain the available demo examples
+type: TOOL
+data:
+  SystemPrompt: >-
+    Briefly explain the demo examples: list the inventory, ask an inventory data question,
+    start a stock review, or ask about returns and refunds. Do not answer unrelated questions.

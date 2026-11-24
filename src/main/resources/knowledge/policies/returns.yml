@@ -1,0 +1,7 @@
+name: return-policy
+description: Explain the sample returns and refunds policy
+type: TOOL
+aliases: [return policy, return window, refunds]
+data:
+  SystemPrompt: >-
+    Answer using only this sample policy: Unopened sample products can be returned within 30 days with a receipt.

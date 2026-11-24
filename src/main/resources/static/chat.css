@@ -1,0 +1,12 @@
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#10121d;color:#edf0ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#23204a,transparent 65%);min-height:100vh}
+main{max-width:760px;margin:auto;padding:2.5rem 1rem}header,.input-row{display:flex;align-items:center;justify-content:space-between;gap:.6rem}
+h1{font-size:clamp(2rem,7vw,4rem);letter-spacing:-.05em;margin:1rem 0 .25rem}em{color:#a99aff;font-style:normal}p{color:#bfc2db;line-height:1.6}
+.badge{color:#d1c8ff;background:#33285a;padding:.4rem .7rem;border-radius:2rem;font-size:.7rem;letter-spacing:.12em;font-weight:700}
+#chat{background:#191b2b;border:1px solid #343752;border-radius:1.3rem;padding:1rem;margin-top:1.5rem;box-shadow:0 20px 60px #0004}
+#messages{display:flex;flex-direction:column;gap:.85rem;min-height:12rem;max-height:52vh;overflow:auto;padding:.3rem}
+.bubble{white-space:pre-wrap;overflow-wrap:anywhere;padding:.75rem 1rem;max-width:92%;border-radius:.85rem;background:#282b43;align-self:flex-start}.user{background:#51428b;align-self:flex-end}
+#examples,.choices{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.75rem}#status{min-height:1.6rem;color:#bcc2e5;font-size:.85rem;margin-top:.5rem}
+button,input{font:inherit;border-radius:.65rem;border:1px solid #4e5275;padding:.55rem .75rem}button{background:#272a40;color:#f1edff;cursor:pointer}button:hover:not(:disabled){background:#3d3d61}button:disabled{opacity:.55;cursor:default}
+input{min-width:0;flex:1;background:#111321;color:#fff}#send{background:#9d8dff;color:#171028;font-weight:750}label{display:block;font-size:.82rem;margin-bottom:.3rem}
+table{border-collapse:collapse;font-size:.88rem}th,td{padding:.4rem .65rem;text-align:left;border-bottom:1px solid #484b66}th{color:#d2c7ff}

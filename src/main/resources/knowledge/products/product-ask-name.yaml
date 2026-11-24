@@ -1,0 +1,6 @@
+name: product-ask-name
+description: Collect the product name
+type: HUMANLOOP
+active: false
+data:
+  question: What is the product name? Use up to 80 characters.

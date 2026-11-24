@@ -1,0 +1,6 @@
+name: product-ask-sku
+description: Collect the product SKU
+type: HUMANLOOP
+active: false
+data:
+  question: What is the SKU? Use up to 12 letters, digits, hyphens, or underscores.
